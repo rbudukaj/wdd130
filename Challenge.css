@@ -1,0 +1,45 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    margin: 50px 0;
+    max-width: 100%;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
+#Tcontainer {
+    background-color: rgba(128, 128, 128, 0.664);
+    max-width: 100%;
+    display: grid;
+}
+
+img {
+    max-width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.p1 {
+    font-size: 60px;
+    color: solid black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: right;
+    z-index: 1;
+}
+
+.p2 {
+    font-size: 60px;
+    color: solid black;
+    margin: 40px;
+    letter-spacing: 3px;
+}
+
+.p3 {
+    font-size: 30px;
+    color: rgb(125, 26, 26);
+    text-align: center;
+    letter-spacing: 5px;
+}
