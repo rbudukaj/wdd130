@@ -311,12 +311,7 @@ h2 {
 	height : 100%;
 	float: left;
 }
-/*.nav2 a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    padding: 35px;
-}*/
+
 @keyframes slider {
 	0% { left: 0; }
 	30% { left: 0; }

@@ -15,7 +15,7 @@ body {
     padding-bottom: -50px;
     font-family: "playfair display";
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 30px auto;
 }
 
 
@@ -72,96 +72,104 @@ body {
 #main-nav a:hover{
     background-color: rgba(255, 255, 255, 0.5);
 }
-/*
-#slider {
+
+#slider img{
     width: 100%;
-    height: 350px;
+    height: 400px;
 }
 
-#main-body{
+#intro {
     display: grid;
-    grid-template-columns: repeat(10,1fr);
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
+    grid-template-columns: 200px 200px 200px 50px 50px;
+    width: 100%;
     align-items: center;
+    justify-content: center;
 }
 
-.main-text{
-    grid-column: 1/6;
-    grid-row: 1/6;
-    text-align: center;
-    line-height: 2em;
+.page_1 {
+    margin-top: -100px;
+    grid-column: 1/9;
+    grid-row: 1/9;
 }
 
-.main-media{
-    grid-column: 1/6;
-    grid-row: 5/7;
-    margin-top: -200px;
-}
-
-.main-media h1{
-    text-align: left;
-    margin-left: -50px;
-    margin-bottom: 50px;
+.page_1 h1{
+    margin-left: 20px;
     font-family: "playfair display";
 }
 
-
-.para{
-    grid-column: 1/6;
-    grid-row: 7/8;
-    text-align: center;
-    line-height: 2em;
-
+.page_1 p{
+    width: 95%;
+    font-family: poppins;
+    line-height: 3em;
+    margin-left: 30px;
 }
 
-.ads {
-    grid-column: 7/11;
-    grid-row: 1/5;
-
+.page_2 {
+    margin-top: -50px;
+    grid-column: 9/10;
+    grid-row: 1/9;
 }
 
-.ads img{
-    width: 100%;
-    margin-top: 50px;
+.page_2 img{
+    max-width: 150px;
+    margin-left: 100px;
+    border-radius: 50%;
     border:4px solid black;
     transition: transform .5s;
-    box-shadow: 7px 7px 12px #cc7437;
+    box-shadow: 10px 10px 15px #cc7437;
 }
 
-.ads img:hover {
+.page_2 img:hover {
     opacity: .8;
     transform: scale(1.1);
 }
 
-
-.ads figcaption{
-    margin-left: 150px;
-    margin-top: 20px;
-}
-
-.ads p{
-    text-align: center;
+.page_2 p{
+    font-size: 13px;
+    font-family: poppins;
     line-height: 2em;
 }
 
-.ai-video {
-    grid-column: 7/11;
-    grid-row: 6/11;
-    margin-top: 50px;
+#sub_intro {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 50px 50px;
+}
+.page_3 {
+    grid-column: 1/9;
+    grid-row: 1/9;
 }
 
-.ai-video h3{
+.page_3 h1{
     font-family: "playfair display";
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
+}
+.page_3 ul li{
+    line-height: 3em;
+}
+#sub_intro iframe{
+    margin-left: 50px;
 }
 
-.ai-video p{
+.page_4 {
+    grid-column: 10;
+    grid-row: 1/9;
+}
+
+.page_4 img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.page_4 p{
     font-family: poppins;
-    line-height: 2.5em;
-    text-align: center;
-}*/
+    font-size: 13px;
+    line-height: 2em;
+}
+
+#body {
+    width: 100%;
+}
 
 footer{
     background-color: #3e5d60;
@@ -190,4 +198,108 @@ footer p {
 
 footer .social-media {
     padding-top: 25px;
+}
+
+/* CSS for afriicons.html */
+
+#hero-photo {
+    width: 100%;
+}
+
+#hero-photo img {
+    width: 100%;
+    max-height: 200px;
+}
+
+#container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.profiles {
+    width: 100%;
+    display: flex;
+    grid-column: 2/8;
+    grid-row: 1/8;
+}
+
+.profiles img {
+    width: 200px;
+    border:4px solid black;
+    margin-left: 30px;
+    transition: transform .5s;
+    box-shadow: 7px 7px 12px #cc7437;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profiles img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+.profiles p{
+    font-size: 0.8em;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.side_bar {
+    grid-column: 9/10;
+    grid-row: 1/8;
+}
+
+.side_bar img{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.side_bar img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+.side_bar ul li{
+    margin-bottom: 20px;
+}
+
+#placeholder {
+    display: relative;
+    float: right;
+    font-weight: 5px;
+    margin-top: 50px;
+}
+
+/* CSS for historicalm.html */
+
+
+@media screen and (max-width: 900px) {
+    #main-header{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    #body{
+        width: 100%;
+        margin: 0 auto;
+     }
+
+    #intro {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .page_2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
 }
