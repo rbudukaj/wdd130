@@ -10,12 +10,12 @@ body {
 
 #main-header {
     background-color: #3e5d60;
-    width: 100%;
-    padding-top: -50px;
-    padding-bottom: -50px;
     font-family: "playfair display";
     display: grid;
     grid-template-columns: 30px auto;
+    position: fixed; /* Make it stick/fixed */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 
@@ -202,14 +202,16 @@ footer .social-media {
 
 /* CSS for afriicons.html */
 
-#hero-photo {
-    width: 100%;
-}
-
 #hero-photo img {
     width: 100%;
-    max-height: 200px;
+    max-height: 350px;
+    margin-bottom: -60px;
 }
+input{
+    float: right;
+    padding: 6px;
+    border: 3px solid #473627;
+    }
 
 #container {
     width: 100%;
@@ -271,7 +273,41 @@ footer .social-media {
     margin-top: 50px;
 }
 
-/* CSS for historicalm.html */
+.work1 img{
+    height: 215px;
+}
+
+.work2 img{
+    margin-top: 18px;
+}
+
+.work3 img{
+    height: 200px;
+    margin-top: 37px;
+}
+
+.work4 img{
+    margin-top: 35px;
+    height: 200px;
+}
+
+.work5 img{
+    margin-top: 45px;
+}
+
+.work6 img{
+    height: 200px;
+    margin-top: 25px;
+}
+
+.work7 img{
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+
+
+/* CSS for historicalm.html 
 
 
 @media screen and (max-width: 900px) {
@@ -302,4 +338,4 @@ footer .social-media {
         width: 100%;
         flex-direction: column;
     }
-}
+}*/
